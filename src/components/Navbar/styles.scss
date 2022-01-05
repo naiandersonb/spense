@@ -31,8 +31,6 @@ $font-size-logo: 24px;
             font-weight: 700;
             font-size: 24px;
 
-            flex: 1;
-
             &:hover {
                 color: lighten($text-color, 30);
             }
@@ -43,8 +41,6 @@ $font-size-logo: 24px;
         }
 
         .nav_links {
-            flex: 2;
-            
             display: flex;
             align-items: center;
             justify-content: center;
