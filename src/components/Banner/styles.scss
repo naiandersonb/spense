@@ -1,0 +1,78 @@
+$bg-color-container: #F0EEEB;
+$text-primary-color: #000;
+$text-secondary-color: #545444;
+
+#banner {
+    width: 100%;
+    margin-bottom: 50px;
+
+    .banner_container {
+        max-width: 1440px;
+        height: 500px;
+
+        margin: 0 auto;
+
+        background-color: $bg-color-container;
+
+        background-image: url('../../Assets/PhoneMockupDesktop.png');
+        background-size: cover;
+
+        border-radius: 10px;
+        padding: 96px;
+
+        display: flex;
+        align-items: center;
+
+        .banner_content {
+            h2 {
+                max-width: 360px;
+                padding: 20px 0;
+    
+                color: $text-primary-color;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 43px;
+            }
+    
+            p {
+                max-width: 460px;
+                color: $text-secondary-color;
+    
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
+    
+            a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+    
+                color: $text-secondary-color;
+    
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            padding: 40px;
+            height: 750px;
+
+            background-image: url('../../Assets/PhoneMockupTablet.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+
+        }
+        
+        @media screen and (max-width: 660px) {
+            height: 900px;
+            background-image: url('../../Assets/PhoneMockupMobile.png');
+        }
+
+    }
+
+}

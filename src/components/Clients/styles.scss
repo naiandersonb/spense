@@ -1,0 +1,35 @@
+#clients {
+    width: 100%;
+    padding: 20px;
+
+    .clients_container {
+        max-width: 1440px;
+        margin: 50px auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+
+        .img_logo {
+            width: 100%;
+            
+            img {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .inactive_tablet {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 660px) {
+            .inactive_mobile {
+                display: none;
+            }
+        }
+        
+    }
+}
